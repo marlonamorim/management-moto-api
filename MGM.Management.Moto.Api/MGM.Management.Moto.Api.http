@@ -1,0 +1,21 @@
+@MGM.Management.Moto.Api_HostAddress = http://localhost:5296
+
+GET {{MGM.Management.Moto.Api_HostAddress}}/api/moto/{license-plate}/
+Accept: application/json
+
+###
+
+GET {{MGM.Management.Moto.Api_HostAddress}}/api/moto/
+Accept: application/json
+
+###
+
+POST {{MGM.Management.Moto.Api_HostAddress}}/api/moto/
+Accept: application/json
+
+###
+
+DELETE {{MGM.Management.Moto.Api_HostAddress}}/api/moto/{id:int}
+Accept: application/json
+
+###
