@@ -22,3 +22,16 @@ O acesso ao db também está público a partir de qualquer origem.
 É importante lembrar que para a locação de uma moto,se faz necessário estar autenticado com o perfil de entregador.
 
 ![image](https://github.com/marlonamorim/management-moto-api/assets/36924662/237f725b-30e1-42b5-a255-26df469ba709)
+
+
+```Executando api com Docker```
+
+   1. Execute o seguinte comando na raiz onde se encontra o arquivo Docker
+      ```docker build -t management-moto-api-image .```
+      Esse comando irá fazer o download do sdk do .net 8 e gerar a imagem através das instruções contidas no arquivo.
+
+   2. Em seguida, execute o seguinte comando a fim de criar o container através da imagem gerada
+      ```docker run -d -p 5296:8080 --name="management-moto-api-core" management-moto-api-image```
+
+   Por fim, acesse no browser a api a partir da porta indicada.
+![image](https://github.com/marlonamorim/management-moto-api/assets/36924662/1ca74309-649b-4a38-b043-076f78e042a6)
